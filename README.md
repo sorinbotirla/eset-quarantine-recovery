@@ -5,6 +5,7 @@ Decryption ogic is implemented directly in Python. Inspired by HexAcorn DexRAY (
 
 ### Why not just restore files from the ESET GUI?
 <p>Because sometimes the AV just refuses to restore them and on their forums, they ask people to send them their files to manually decrypt them.</p>
+<P>Also, when you restore a file from the quarantine, the AV tries to "clean" it, therefore you can get an archive stripped down.</P>
 
 ---
 
@@ -56,17 +57,49 @@ python eset_unquarantine_gui.py
 ```
 
 ---
+<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/gui.png" width='100%' />
 
 ### Usage Instructions
 
 <ul>
   <li>Select in GUI: Choose your "Quarantined files folder" containing .NQF files.</li>
-  <li>Click Scan Quarantine to populate the file list.</li>
-  <li>(Optional) Choose your OCR screenshot folder and Start OCR Scan to auto-suggest filenames.</li>
-  <li>Edit any OCR name directly by double-clicking the cell.</li>
+  <li>Click Scan Quarantine to populate the file list.
+  <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/quarantinescan.png" width='100%' />
+  </li>
+  <li>(Optional) Choose your OCR screenshot folder and Start OCR Scan to auto-suggest filenames.
+  <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/ocrscan.png" width='100%' />
+  </li>
+  <li>Edit any OCR name directly by double-clicking the cell. Press enter to accept the input value
+  <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/ocrnameedit.png" width='100%' />
+  </li>
   <li>Choose an "Extracted files folder".</li>
-  <li>Click Extract Files to decrypt and extract. Outputs are organized by hash.</li>
+  <li>Click Extract Files to decrypt and extract. Outputs are organized by hash.
+  <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/extractingfiles.png" width='100%' />
+  </li>
 </ul>
+
+### Why OCR?
+
+<p>I have used OCR to read the file names and their size from the ESET quarantine screenshots. The quarantined files are stored without their original names, so the only almost-reliable way to keep tracking of the original file names was to check their size. To do that, simply screenshot the quarantine list but keep the screenshots cropped to the last part of the path (file names and their size).</p>
+
+#### Do not take screenshots of the entire quarantine window
+<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/1.JPG" width='100%' />
+
+#### Take screenshots only on the file names and their size
+<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/1crop.jpg" width='100%' />
+
+---
+
+### Quarantined files (NQF) and the recovered files
+
+<table>
+  <td width="50%">
+    <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/quarantinefiles.png" width='100%' />
+  </td>
+  <td width="50%">
+    <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/recoveredfile.png" width='100%' />
+  </td>
+</table>
 
 ---
 
