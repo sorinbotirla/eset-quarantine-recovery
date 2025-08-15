@@ -1,7 +1,9 @@
 # ESET Quarantine Recovery
 
+<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/cannotrestore.JPG" width='100%' />
+
 Recover files from **ESET Online Scanner** quarantine (`*.NQF`) on Windows, Linux, and macOS.  
-Decryption ogic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
+Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
 
 ### Why not just restore files from the ESET GUI?
 <p>Because sometimes the AV just refuses to restore them and on their forums, they ask people to send them their files to manually decrypt them.</p>
@@ -11,7 +13,7 @@ Decryption ogic is implemented directly in Python. Inspired by HexAcorn DexRAY (
 
 ## Features
 
-- **Native ESET `.NQF` decoder** in Python—no DeXRAY or Perl needed  
+- **Native ESET `.NQF` decoder** in Python
 - **Cross-platform GUI (Tkinter)** for ease of use  
 - **OCR integration (optional)** — auto-suggest filenames from quarantine screenshots  
 - **Interactive file list**, editable OCR names, labels for missing/duplicates, and per-file extraction toggles  
@@ -21,7 +23,7 @@ Decryption ogic is implemented directly in Python. Inspired by HexAcorn DexRAY (
 
 ## Getting Started
 
-We recommend using a virtual environment to keep dependencies clean.
+I recommend using a virtual environment to keep dependencies clean.
 
 ### 1. Clone the repository
 
@@ -46,12 +48,12 @@ venv\Scripts\activate.bat       # Windows
 pip install pillow pytesseract
 ```
 
-## On Linux, you may also need:
+If you get the "managed environment" error, you can skip it by adding --break-system-packages at the end of the pip install command
+
+## On Linux (my testing distro was Debian based, update the equivalent for your distro), you may also need:
 ```bash
 sudo apt install python3-tk tesseract-ocr
 ```
-
-if you get the "managed environment" error, you can skip it by adding --break-system-packages at the end of the pip install command
 
 ### 4. Run the GUI
 ```bash
@@ -68,13 +70,13 @@ python eset_unquarantine_gui.py
   <li>Click Scan Quarantine to populate the file list.
   <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/quarantinescan.png" width='100%' />
   </li>
+  <li>Choose an "Extracted files folder".</li>
   <li>(Optional) Choose your OCR screenshot folder and Start OCR Scan to auto-suggest filenames.
   <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/ocrscan.png" width='100%' />
   </li>
   <li>Edit any OCR name directly by double-clicking the cell. Press enter to accept the input value
   <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/ocrnameedit.png" width='100%' />
   </li>
-  <li>Choose an "Extracted files folder".</li>
   <li>Click Extract Files to decrypt and extract. Outputs are organized by hash.
   <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/extractingfiles.png" width='100%' />
   </li>
@@ -120,26 +122,12 @@ C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
   <li>OCR binary missing: Confirm Tesseract is installed and accessible (tesseract --version).</li>
   <li>Tkinter errors: On Linux, you may need sudo apt install python3-tk.</li>
   <li>Permission issues: Select output folder where you have write access.</li>
-  <li>OCR name truncations: Layout-specific tweaks added to help restore full names—let me know if any fail.</li>
+  <li>OCR name truncations: Try to crate clean screenshots, only capturing the file names and their size.</li>
 </ul>
-
----
-
-### Contributing
-
-<p>Suggestions for OCR heuristics or UI improvements are welcome via Issues or PRs.</p>
-
-<p>Just clone, update, and send a PR—MIT License, go wild.</p>
 
 ---
 
 ### License
 
-<p>Distributed under the MIT License. See LICENSE.</p>
+<p>Distributed under the MIT License. See <a href="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/LICENSE">LICENSE</a>.</p>
 
----
-
-### Contact
-
-<p>Created by sorinbotirla. Feel free to reach out via GitHub or wherever works best!</p>
-<p>Enjoy your clean and easy ESET quarantine recovery GUI!</p>
