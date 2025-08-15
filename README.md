@@ -51,6 +51,8 @@ pip install pillow pytesseract
 sudo apt install python3-tk tesseract-ocr
 ```
 
+if you get the "managed environment" error, you can skip it by adding --break-system-packages at the end of the pip install command
+
 ### 4. Run the GUI
 ```bash
 python eset_unquarantine_gui.py
