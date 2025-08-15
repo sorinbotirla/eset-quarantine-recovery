@@ -4,9 +4,17 @@ Recover files from **ESET Online Scanner** quarantine (`*.NQF`) on Windows, Linu
 Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
 
 ### Why not just restore files from the ESET GUI?
-<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/cannotrestore.JPG" width='100%' />
-<p>Because sometimes the AV just refuses to restore them and on their forums, they ask people to send them their files to manually decrypt them.</p>
-<P>Also, when you restore a file from the quarantine, the AV tries to "clean" it, therefore you can get an archive stripped down.</P>
+<table>
+  <td width="50%">
+    <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/cannotrestore.JPG" width='100%' />
+  </td>
+  <td width="50%">
+    <p>Because sometimes the AV just refuses to restore them and on their forums, they ask people to send them their files to manually decrypt them.</p>
+    <p>Also, when you restore a file from the quarantine, the AV tries to "clean" it, therefore you can get an archive stripped down.</p>
+  </td>
+</table>
+
+
 
 ---
 
