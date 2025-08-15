@@ -92,6 +92,12 @@ python eset_unquarantine_gui.py
 
 ### Quarantined files (NQF) and the recovered files
 
+<p>You can find the ESET Online Scanner's quarantined files under</p>
+
+```bash
+C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
+```
+
 <table>
   <td width="50%">
     <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/quarantinefiles.png" width='100%' />
