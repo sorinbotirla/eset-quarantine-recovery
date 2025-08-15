@@ -138,3 +138,9 @@ C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
 
 <p>Distributed under the MIT License. See <a href="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/LICENSE">LICENSE</a>.</p>
 
+---
+
+### Extras
+
+<p>There is a cli version which doesn't work as well as the GUI script, and also a dexray.sh bash script that downloads and uses DexRAY.pl from HexAcorn website.</p>
+
