@@ -144,3 +144,9 @@ C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
 
 <p>There is a cli version which doesn't work as well as the GUI script, and also a dexray.sh bash script that downloads and uses DexRAY.pl from HexAcorn website.</p>
 
+---
+
+### Final Notice
+
+<p>Do not rely 100% on the OCR to match the file names. Check yourself if they are the right ones. Use this tool to carefully restore false positives and stay away from malware.</p>
+
