@@ -100,6 +100,8 @@ python eset_unquarantine_gui.py
 C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
 ```
 
+<p>Copy the files from the quarantine folder to another folder for convenience. You will use that folder as a source for extraction. </p>
+
 <table>
   <td width="50%">
     <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/quarantinefiles.png" width='100%' />
