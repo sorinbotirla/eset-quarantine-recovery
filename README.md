@@ -129,7 +129,7 @@ C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
   <li>OCR binary missing: Confirm Tesseract is installed and accessible (tesseract --version).</li>
   <li>Tkinter errors: On Linux, you may need sudo apt install python3-tk.</li>
   <li>Permission issues: Select output folder where you have write access.</li>
-  <li>OCR name truncations: Try to crate clean screenshots, only capturing the file names and their size.</li>
+  <li>OCR name truncations: Try to take clean screenshots, only capturing the file names and their size.</li>
 </ul>
 
 ---
