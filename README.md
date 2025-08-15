@@ -9,7 +9,7 @@ Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY 
     <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/cannotrestore.JPG" width='100%' />
   </td>
   <td width="50%">
-    <p>Because sometimes the AV just refuses to restore them and on their forums, they ask people to send them their files to manually decrypt them. (<a href="https://forum.eset.com/topic/37532-eset-online-scanner-failed-to-restore-files-from-quarantinne/" target="_blank">Example of ESET forum post</a></p>
+    <p>Because sometimes the AV just refuses to restore the quarantined files and, on the ESET forums, they ask people to send their files to manually decrypt them. (<a href="https://forum.eset.com/topic/37532-eset-online-scanner-failed-to-restore-files-from-quarantinne/" target="_blank">Example of ESET forum post</a></p>
     <p>Also, when you restore a file from the quarantine, the AV tries to "clean" it, therefore you can get an archive stripped down.</p>
   </td>
 </table>
