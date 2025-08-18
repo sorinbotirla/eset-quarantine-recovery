@@ -62,6 +62,9 @@ If you get the "managed environment" error, you can skip it by adding --break-sy
 sudo apt install python3-tk tesseract-ocr
 ```
 
+## On Windows you may also need:
+The last version of the Tesseract OCR <a href="https://digi.bib.uni-mannheim.de/tesseract/">here</a>
+
 ### 4. Run the GUI
 ```bash
 python eset_unquarantine_gui.py
