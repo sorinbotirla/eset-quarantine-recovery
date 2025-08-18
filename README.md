@@ -28,7 +28,7 @@ Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY 
 
 ---
 
-## Getting Started
+## Installing
 
 I recommend using a virtual environment to keep dependencies clean.
 
@@ -39,33 +39,22 @@ git clone https://github.com/sorinbotirla/eset-quarantine-recovery.git
 cd eset-quarantine-recovery
 ```
 
+### 2. Dependencies
 
-### 2. (Optional) Set up a virtual env
-
-```bash
-python3 -m venv venv
-source venv/bin/activate        # Linux/macOS
-venv\Scripts\activate.bat       # Windows
-```
-
-### 3. Install Python dependencies
-## These are optional if you want OCR:
-
-```bash
-pip install pillow pytesseract
-```
-
-If you get the "managed environment" error, you can skip it by adding --break-system-packages at the end of the pip install command
-
-## On Linux (my testing distro was Debian based, update the equivalent for your distro), you may also need:
+## On Linux (my testing distro was Debian based, update the equivalent for your distro):
 ```bash
 sudo apt install python3-tk tesseract-ocr
+pip install pillow pytesseract --break-system-packages
 ```
 
-## On Windows you may also need:
-The last version of the Tesseract OCR <a href="https://github.com/UB-Mannheim/tesseract/releases">here</a> or <a href="https://digi.bib.uni-mannheim.de/tesseract/">here</a>
+## On Windows:
 
-### 4. Run the GUI
+The last version of the Tesseract OCR <a href="https://github.com/UB-Mannheim/tesseract/releases">here</a> or <a href="https://digi.bib.uni-mannheim.de/tesseract/">here</a>
+```bash
+pip install pillow tesseract pytesseract 
+```
+
+### 3. Run
 ```bash
 python eset_unquarantine_gui.py
 ```
@@ -73,7 +62,7 @@ python eset_unquarantine_gui.py
 ---
 <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/gui.png" width='100%' />
 
-### Usage Instructions
+### Interface instructions
 
 <ul>
   <li>Select in GUI: Choose your "Quarantined files folder" containing .NQF files.</li>
@@ -104,7 +93,7 @@ python eset_unquarantine_gui.py
 
 ---
 
-### Quarantined files (NQF) and the recovered files
+### About Quarantined files (NQF) and the recovered files
 
 <p>You can find the ESET Online Scanner's quarantined files under</p>
 
@@ -122,6 +111,12 @@ C:\Users\<YourUsername>\AppData\Local\ESET\ESETOnlineScanner\Quarantine
     <img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/recoveredfile.png" width='100%' />
   </td>
 </table>
+
+### If your file names are not recognized by OCR
+
+You can still extract them, however, the extracted file will have the extension ``` .out  ``` <br />
+You need to check their MIME types and replace their extension with the original one eg. ```.zip .jpg .exe .pdf``` etc. <br />
+Be careful not to execute something wrong and trigger the real malware at this point. Double check what was the original file name. The ```.out``` extracted files are just the original files, but without the original names and extensions.
 
 ---
 
