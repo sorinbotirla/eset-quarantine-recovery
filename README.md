@@ -1,4 +1,4 @@
-# ESET Quarantine Recovery
+<img width="1557" height="584" alt="image" src="https://github.com/user-attachments/assets/b009956b-d60b-490e-a8fe-6c22615598d4" /># ESET Quarantine Recovery
 
 Recover files from **ESET Online Scanner** quarantine (`*.NQF`) on Windows, Linux, and macOS.  
 Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
@@ -50,6 +50,15 @@ pip install pillow pytesseract --break-system-packages
 ## On Windows:
 
 The last version of the Tesseract OCR <a href="https://github.com/UB-Mannheim/tesseract/releases">here</a> or <a href="https://digi.bib.uni-mannheim.de/tesseract/">here</a>
+
+Add the tesseract path in User PATH environment variable. Open Settings > System > About > Advanced system settings > Environment Variables
+
+<img src="https://raw.githubusercontent.com/sorinbotirla/eset-quarantine-recovery/refs/heads/main/images/path.jpg" width="100%" />
+
+The path you have to add in the PATH is ```C:\Program Files\Tesseract-OCR``` <br />
+
+Install python dependencies
+
 ```bash
 pip install pillow tesseract pytesseract 
 ```
