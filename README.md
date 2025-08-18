@@ -1,4 +1,4 @@
-<img width="1557" height="584" alt="image" src="https://github.com/user-attachments/assets/b009956b-d60b-490e-a8fe-6c22615598d4" /># ESET Quarantine Recovery
+# ESET Quarantine Recovery
 
 Recover files from **ESET Online Scanner** quarantine (`*.NQF`) on Windows, Linux, and macOS.  
 Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
