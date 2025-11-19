@@ -1,7 +1,7 @@
 # ESET Quarantine Recovery
 
 Recover files from **ESET Online Scanner** quarantine (`*.NQF`) on Windows, Linux, and macOS.  
-Decryption logic is implemented directly in Python. Inspired by HexAcorn DexRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
+Decryption logic is implemented directly in Python. Inspired by HexAcorn DeXRAY (<a href="https://hexacorn.com/d/DeXRAY.pl" target="_blank">https://hexacorn.com/d/DeXRAY.pl</a>
 
 ### Why not just restore files from the ESET GUI?
 <table>
